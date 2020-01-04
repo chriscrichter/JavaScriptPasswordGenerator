@@ -8,11 +8,11 @@ This is an application built in HTML and CSS powered by  JavaScript code that ge
 The user will be prompted to choose from the following password criteria:
 
   * Length (between 8 and 128 characters)
-  * Character type:
-  * Special characters
-  * Numeric characters
-  * Lowercase characters
-  * Uppercase characters
+  * Character types:
+        Special characters
+        Numeric characters
+        Lowercase characters
+        Uppercase characters
 
 The application will validate user input and ensure that at least one character type is selected.
 
