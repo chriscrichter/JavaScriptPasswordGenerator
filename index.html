@@ -7,14 +7,13 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	</head>
 	<body>
     <script src="assets/js/script.js"></script>
-    
     <header>
       <h1>JavaScript Password Generator</h1>
     </header>
-
     <div class="container">
         <div class="row">
             <div class="col-2"></div>
@@ -22,21 +21,17 @@
                 <div class="main-box">
                     <h2>Generate a Password</h2>
                     <hr>
-                        <textarea
-                        readonly
+                        <textarea readonly
                         id="passwordOutput"
                         placeholder="Your Secure Password"
-                        aria-label="Generated Password"
                         ></textarea>
                     <hr>
                     <br>
-                    <button id="generate" onclick="passwordGenerate()">Generate Password</button>
+                    <button id="create" onclick="passwordCreate()">Create Password</button>
                     <button id="copy" onclick="copyClipboard()">Copy to Clipboard</button>
                 </div>
             </div>
-            <div class="col-2"></div>
         </div>
     </div>
-
 	</body>
 </html>

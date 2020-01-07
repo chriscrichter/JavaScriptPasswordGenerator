@@ -1,44 +1,41 @@
-header, header h1 {text-align: center;
-	margin-bottom: 25px;
+body {
+	background-color: #f3f3f3;
+	font-family: 'Raleway', sans-serif, Helvetica;
+	padding: 24px;
 }
-
-body {background-color:#f8f9fa;
-	padding: 2em;
+header {
+	text-align: center;
+	margin-bottom: 24px;
 }
-
 .main-box {
     background-color: #ffffff;
-    padding: 2em;
+    padding: 36px;
     text-align: center;
+    box-shadow: 2px 6px 20px 2px rgba(0,0,0.65,0.65);
     border-radius: 5px;
-    -webkit-box-shadow: 2px 6px 18px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 6px 18px 1px rgba(0,0,0,0.75);
-    box-shadow: 2px 6px 18px 1px rgba(0,0,0,0.75);
 }
 textarea {
-    border: 2px dashed gray;
     width: 90%;
+    border: 3px dashed lightgrey;
     border-radius: 4px;
-    padding: 1em;
+    padding: 16px;
     text-align: center;
 }
-button#generate {
+button#create {
     background-color: red;
     color: #fff;
-    border: none;
-    padding: 10px;
+    border: 2px solid;
+    padding: 12px;
     border-radius: 22px;
     font-weight: bold;
 }
 button#copy {
-    padding: 10px;
+    background-color: purple;
+    color: #fff;
+    padding: 12px;
     border-radius: 22px;
     font-weight: bold;
-    border: 1px solid;
-    margin-left: 2%;
+    border: 2px solid;
+    margin-left: 4%;
 }
 
-
-@media (max-width: 482px) {
-    button#generate {margin-bottom: 20px;}
-}
