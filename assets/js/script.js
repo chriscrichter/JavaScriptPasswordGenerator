@@ -1,6 +1,6 @@
 function passwordCreate() {
 
-    // Prompts and variables.
+    // Prompts and variables
     var passLength = prompt("Please enter a password length between 8 and 128 Characters:");
     // Verify that password length meets requirements
     if (passLength >= 8 && passLength <= 128) {
@@ -18,9 +18,9 @@ function passwordCreate() {
     var numbers = '123456789';
     var special = '!#$%&()*+,-./:;<=>?@[\]^_{|}~';
 
-    // check to see which confirmations have been selected.
+    // check to see which confirmations have been selected
 
-    // 1.) all options selected
+    // all options selected
     if (newPasswordLength >= 8 && newPasswordLength <= 128 && upperConf && lowerConf && numbersConf && specialConf) {
         function create(length = newPasswordLength){
             var all = upperCase + lowerCase + numbers + special;
@@ -37,7 +37,7 @@ function passwordCreate() {
 
     }
 
-    // 2.) upperCase lowerCase numbers selected
+    // upperCase lowerCase numbers selected
     else if (newPasswordLength >= 8 && newPasswordLength <= 128 && upperConf && lowerConf && numbersConf) {
         function create(length = newPasswordLength){
             var all = upperCase + lowerCase + numbers;
@@ -54,7 +54,7 @@ function passwordCreate() {
 
     }
 
-    // 3.) upperCase lowerCase special selected
+    // upperCase lowerCase special selected
     else if (newPasswordLength >= 8 && newPasswordLength <= 128 && upperConf && lowerConf && specialConf) {
         function create(length = newPasswordLength){
             var all = upperCase + lowerCase + special;
@@ -71,7 +71,7 @@ function passwordCreate() {
 
     }
 
-    // 4.) upperCase numbers special selected
+    // upperCase numbers special selected
     else if (newPasswordLength >= 8 && newPasswordLength <= 128 && upperConf && numbersConf && specialConf) {
         function create(length = newPasswordLength){
             var all = upperCase + numbers + special;
@@ -88,7 +88,7 @@ function passwordCreate() {
 
     }
 
-    // 5.) lowerCase numbers special selected
+    // lowerCase numbers special selected
     else if (newPasswordLength >= 8 && newPasswordLength <= 128 && lowerConf && numbersConf && specialConf) {
         function create(length = newPasswordLength){
             var all = lowerCase + numbers + special;
@@ -105,7 +105,7 @@ function passwordCreate() {
 
     }
 
-    // 6.) upperCase lowerCase selected
+    // upperCase lowerCase selected
     else if (newPasswordLength >= 8 && newPasswordLength <= 128 && upperConf && lowerConf) {
         function create(length = newPasswordLength){
             var all = upperCase + lowerCase;
@@ -122,7 +122,7 @@ function passwordCreate() {
 
     }
 
-   // 7.) upperCase numbers selected
+   // upperCase numbers selected
     else if (newPasswordLength >= 8 && newPasswordLength <= 128 && upperConf && numbersConf) {
         function create(length = newPasswordLength){
             var all = upperCase + numbers;
@@ -139,7 +139,7 @@ function passwordCreate() {
 
     }
 
-   // 8.) upperCase special selected
+   // upperCase special selected
     else if (newPasswordLength >= 8 && newPasswordLength <= 128 && upperConf && specialConf) {
         function create(length = newPasswordLength){
             var all = upperCase + special;
@@ -156,7 +156,7 @@ function passwordCreate() {
 
     }
 
-   // 9.) upperCase numbers selected
+   // upperCase numbers selected
     else if (newPasswordLength >= 8 && newPasswordLength <= 128 && lowerConf && numbersConf) {
         function create(length = newPasswordLength){
             var all = lowerCase + numbers;
@@ -173,7 +173,7 @@ function passwordCreate() {
 
     }
 
-   // 10.) lowerCase special selected
+   // lowerCase special selected
     else if (newPasswordLength >= 8 && newPasswordLength <= 128 && lowerConf && specialConf) {
         function create(length = newPasswordLength){
             var all = lowerCase + special;
@@ -190,7 +190,7 @@ function passwordCreate() {
 
     }
 
-   // 11.) numbers special selected
+   // numbers special selected
     else if (newPasswordLength >= 8 && newPasswordLength <= 128 && numbersConf && specialConf) {
         function create(length = newPasswordLength){
             var all = numbers + special;
@@ -207,7 +207,7 @@ function passwordCreate() {
 
     }
 
-   // 12.) upperCase only selected
+   // upperCase only selected
     else if (newPasswordLength >= 8 && newPasswordLength <= 128 && upperConf) {
         function create(length = newPasswordLength){
             var all = upperCase;
@@ -224,7 +224,7 @@ function passwordCreate() {
 
     }
 
-   // 13.) lowerCase only selected
+   // lowerCase only selected
     else if (newPasswordLength >= 8 && newPasswordLength <= 128 && lowerConf) {
         function create(length = newPasswordLength){
             var all = lowerCase;
@@ -240,7 +240,7 @@ function passwordCreate() {
         create(newPasswordLength);
     }
 
-   // 14.) numbers only selected
+   // numbers only selected
     else if (newPasswordLength >= 8 && newPasswordLength <= 128 && numbersConf) {
         function create(length = newPasswordLength){
             var all = numbers;
@@ -257,7 +257,7 @@ function passwordCreate() {
 
     }
 
-   // 15.) special only selected
+   // special only selected
     else if (newPasswordLength >= 8 && newPasswordLength <= 128 && specialConf) {
         function create(length = newPasswordLength){
             var all = special;
@@ -271,7 +271,6 @@ function passwordCreate() {
             return passwordClean;
         }
         create(newPasswordLength);
-
     }
 
     else {
