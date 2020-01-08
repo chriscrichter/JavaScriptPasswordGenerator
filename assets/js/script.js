@@ -14,7 +14,7 @@ function passwordCreate() {
     // Verify that password length meets requirements
     if (passLength >= 8 && passLength <= 128) {
         var cleanPasswordLength = parseInt(passLength);
-    	var cleanPasswordLength;
+    	// var cleanPasswordLength;
     
     // Prompts and variables for character types
     var upperConf = confirm("Should password contain uppercase letters?");
@@ -29,9 +29,10 @@ function passwordCreate() {
             var password = '';
                 for (var index = 0; index < length; index++) {
                     var character = Math.floor(Math.random() * all.length);
-                    password += all[(character, character + 1)];
+                    password += all[(character)];
                 }
                 passwordClean = password.replace(/undefined/g, 'z');
+                console.log(passwordClean)
                 document.getElementById("passwordOutput").innerHTML = passwordClean;
             return passwordClean;
         }
@@ -45,7 +46,7 @@ function passwordCreate() {
             var password = '';
                 for (var index = 0; index < length; index++) {
                     var character = Math.floor(Math.random() * all.length);
-                    password += all[(character, character + 1)];
+                    password += all[(character)];
                 }
                 passwordClean = password.replace(/undefined/g, 'z');
                 document.getElementById("passwordOutput").innerHTML = passwordClean;
@@ -61,7 +62,7 @@ function passwordCreate() {
             var password = '';
                 for (var index = 0; index < length; index++) {
                     var character = Math.floor(Math.random() * all.length);
-                    password += all[(character, character + 1)];
+                    password += all[(character)];
                 }
                 passwordClean = password.replace(/undefined/g, 'z');
                 document.getElementById("passwordOutput").innerHTML = passwordClean;
@@ -77,7 +78,7 @@ function passwordCreate() {
             var password = '';
                 for (var index = 0; index < length; index++) {
                     var character = Math.floor(Math.random() * all.length);
-                    password += all[(character, character + 1)];
+                    password += all[(character)];
                 }
                 passwordClean = password.replace(/undefined/g, 'Z');
                 document.getElementById("passwordOutput").innerHTML = passwordClean;
@@ -93,7 +94,7 @@ function passwordCreate() {
             var password = '';
                 for (var index = 0; index < length; index++) {
                     var character = Math.floor(Math.random() * all.length);
-                    password += all[(character, character + 1)];
+                    password += all[(character)];
                 }
                 passwordClean = password.replace(/undefined/g, 'z');
                 document.getElementById("passwordOutput").innerHTML = passwordClean;
@@ -109,7 +110,7 @@ function passwordCreate() {
             var password = '';
                 for (var index = 0; index < length; index++) {
                     var character = Math.floor(Math.random() * all.length);
-                    password += all[(character, character + 1)];
+                    password += all[(character)];
                 }
                 passwordClean = password.replace(/undefined/g, 'z');
                 document.getElementById("passwordOutput").innerHTML = passwordClean;
@@ -125,7 +126,7 @@ function passwordCreate() {
             var password = '';
                 for (var index = 0; index < length; index++) {
                     var character = Math.floor(Math.random() * all.length);
-                    password += all[(character, character + 1)];
+                    password += all[(character)];
                 }
                 passwordClean = password.replace(/undefined/g, 'Z');
                 document.getElementById("passwordOutput").innerHTML = passwordClean;
@@ -141,7 +142,7 @@ function passwordCreate() {
             var password = '';
                 for (var index = 0; index < length; index++) {
                     var character = Math.floor(Math.random() * all.length);
-                    password += all[(character, character + 1)];
+                    password += all[(character)];
                 }
                 passwordClean = password.replace(/undefined/g, 'Z');
                 document.getElementById("passwordOutput").innerHTML = passwordClean;
@@ -157,7 +158,7 @@ function passwordCreate() {
             var password = '';
                 for (var index = 0; index < length; index++) {
                     var character = Math.floor(Math.random() * all.length);
-                    password += all[(character, character + 1)];
+                    password += all[(character)];
                 }
                 passwordClean = password.replace(/undefined/g, 'Z');
                 document.getElementById("passwordOutput").innerHTML = passwordClean;
@@ -173,7 +174,7 @@ function passwordCreate() {
             var password = '';
                 for (var index = 0; index < length; index++) {
                     var character = Math.floor(Math.random() * all.length);
-                    password += all[(character, character + 1)];
+                    password += all[(character)];
                 }
                 passwordClean = password.replace(/undefined/g, 'z');
                 document.getElementById("passwordOutput").innerHTML = passwordClean;
@@ -189,7 +190,7 @@ function passwordCreate() {
             var password = '';
                 for (var index = 0; index < length; index++) {
                     var character = Math.floor(Math.random() * all.length);
-                    password += all[(character, character + 1)];
+                    password += all[(character)];
                 }
                 passwordClean = password.replace(/undefined/g, '9');
                 document.getElementById("passwordOutput").innerHTML = passwordClean;
@@ -205,7 +206,7 @@ function passwordCreate() {
             var password = '';
                 for (var index = 0; index < length; index++) {
                     var character = Math.floor(Math.random() * all.length);
-                    password += all[(character, character + 1)];
+                    password += all[(character)];
                 }
                 passwordClean = password.replace(/undefined/g, 'Z');
                 document.getElementById("passwordOutput").innerHTML = passwordClean;
@@ -221,7 +222,7 @@ function passwordCreate() {
             var password = '';
                 for (var index = 0; index < length; index++) {
                     var character = Math.floor(Math.random() * all.length);
-                    password += all[(character, character + 1)];
+                    password += all[(character)];
                 }
                 passwordClean = password.replace(/undefined/g, 'z');
                 document.getElementById("passwordOutput").innerHTML = passwordClean;
@@ -237,7 +238,7 @@ function passwordCreate() {
             var password = '';
                 for (var index = 0; index < length; index++) {
                     var character = Math.floor(Math.random() * all.length);
-                    password += all[(character, character + 1)];
+                    password += all[(character)];
                 }
                 passwordClean = password.replace(/undefined/g, '9');
                 document.getElementById("passwordOutput").innerHTML = passwordClean;
@@ -253,7 +254,7 @@ function passwordCreate() {
             var password = '';
                 for (var index = 0; index < length; index++) {
                     var character = Math.floor(Math.random() * all.length);
-                    password += all[(character, character + 1)];
+                    password += all[(character)];
                 }
                 passwordClean = password.replace(/undefined/g, '#');
                 document.getElementById("passwordOutput").innerHTML = passwordClean;
