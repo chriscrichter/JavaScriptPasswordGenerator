@@ -8,13 +8,6 @@ header {
 	text-align: center;
 	margin-bottom: 24px;
 }
-.main-box {
-    background-color: #ffffff;
-    padding: 56px;
-    text-align: center;
-    box-shadow: 2px 6px 20px 2px rgba(0,0,0.65,0.65);
-    border-radius: 5px;
-}
 textarea {
     width: 90%;
     height: 125px;
@@ -23,7 +16,14 @@ textarea {
     padding: 16px;
     text-align: center;
 }
-button#create {
+.main-box {
+    background-color: #ffffff;
+    padding: 56px;
+    text-align: center;
+    box-shadow: 2px 6px 20px 2px rgba(0,0,0.65,0.65);
+    border-radius: 5px;
+}
+button#pwCreate {
     background-color: red;
     color: #fff;
     width: 170px;
@@ -33,7 +33,7 @@ button#create {
     border: 2px solid;
     margin-left: 4%;
 }
-button#copy {
+button#pwCopy {
     background-color: purple;
     color: #fff;
     width: 170px;
