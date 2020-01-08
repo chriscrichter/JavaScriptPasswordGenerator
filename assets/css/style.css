@@ -1,3 +1,4 @@
+/* JavaScript Password Generator */
 body {
 	background-color: #f3f3f3;
 	font-family: 'Raleway', sans-serif, Helvetica;
@@ -25,18 +26,20 @@ textarea {
 button#create {
     background-color: red;
     color: #fff;
-    border: 2px solid;
-    padding: 12px;
-    border-radius: 22px;
-    font-weight: bold;
-}
-button#copy {
-    background-color: purple;
-    color: #fff;
-    padding: 12px;
+    width: 170px;
+    padding: 8px;
     border-radius: 22px;
     font-weight: bold;
     border: 2px solid;
     margin-left: 4%;
 }
-
+button#copy {
+    background-color: purple;
+    color: #fff;
+    width: 170px;
+    padding: 8px;
+    border-radius: 22px;
+    font-weight: bold;
+    border: 2px solid;
+    margin-left: 4%;
+}

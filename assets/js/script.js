@@ -8,7 +8,7 @@
 
 function passwordCreate() {
 
-    // Prompts and variables
+    // Prompt and variable for password length
     var passLength = prompt("Please enter a password length between 8 and 128 Characters:");
 
     // Verify that password length meets requirements
@@ -17,6 +17,7 @@ function passwordCreate() {
 
     var newPasswordLength;
     
+    // Prompts and variables for character types
     var upperConf = confirm("Should password contain uppercase letters?");
     var lowerConf = confirm("Should password contain lowercase letters?");
     var numbersConf = confirm("Should password contain numbers?");
