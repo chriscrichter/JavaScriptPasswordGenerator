@@ -1,7 +1,16 @@
+	// JavaScript Password Generator
+
+	// Variables containing characters
+    var upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var lowerCase = 'abcdefghijklmnopqrstuvwxyz';
+    var numbers = '123456789';
+    var special = '!#$%&()*+,-./:;<=>?@[\]^_{|}~';
+
 function passwordCreate() {
 
     // Prompts and variables
     var passLength = prompt("Please enter a password length between 8 and 128 Characters:");
+
     // Verify that password length meets requirements
     if (passLength >= 8 && passLength <= 128) {
         var newPasswordLength = parseInt(passLength);
@@ -13,14 +22,7 @@ function passwordCreate() {
     var numbersConf = confirm("Should password contain numbers?");
     var specialConf = confirm("Should password contain special characters?");
 
-    var upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    var lowerCase = 'abcdefghijklmnopqrstuvwxyz';
-    var numbers = '123456789';
-    var special = '!#$%&()*+,-./:;<=>?@[\]^_{|}~';
-
-    // check to see which confirmations have been selected
-
-    // all options selected
+    // upperCase lowerCase numbers special selected
     if (newPasswordLength >= 8 && newPasswordLength <= 128 && upperConf && lowerConf && numbersConf && specialConf) {
         function create(length = newPasswordLength){
             var all = upperCase + lowerCase + numbers + special;
@@ -34,7 +36,6 @@ function passwordCreate() {
             return passwordClean;
         }
         create(newPasswordLength);
-
     }
 
     // upperCase lowerCase numbers selected
@@ -51,7 +52,6 @@ function passwordCreate() {
             return passwordClean;
         }
         create(newPasswordLength);
-
     }
 
     // upperCase lowerCase special selected
@@ -68,7 +68,6 @@ function passwordCreate() {
             return passwordClean;
         }
         create(newPasswordLength);
-
     }
 
     // upperCase numbers special selected
@@ -85,7 +84,6 @@ function passwordCreate() {
             return passwordClean;
         }
         create(newPasswordLength);
-
     }
 
     // lowerCase numbers special selected
@@ -102,7 +100,6 @@ function passwordCreate() {
             return passwordClean;
         }
         create(newPasswordLength);
-
     }
 
     // upperCase lowerCase selected
@@ -119,7 +116,6 @@ function passwordCreate() {
             return passwordClean;
         }
         create(newPasswordLength);
-
     }
 
    // upperCase numbers selected
@@ -136,7 +132,6 @@ function passwordCreate() {
             return passwordClean;
         }
         create(newPasswordLength);
-
     }
 
    // upperCase special selected
@@ -153,7 +148,6 @@ function passwordCreate() {
             return passwordClean;
         }
         create(newPasswordLength);
-
     }
 
    // upperCase numbers selected
@@ -170,7 +164,6 @@ function passwordCreate() {
             return passwordClean;
         }
         create(newPasswordLength);
-
     }
 
    // lowerCase special selected
@@ -187,7 +180,6 @@ function passwordCreate() {
             return passwordClean;
         }
         create(newPasswordLength);
-
     }
 
    // numbers special selected
@@ -204,7 +196,6 @@ function passwordCreate() {
             return passwordClean;
         }
         create(newPasswordLength);
-
     }
 
    // upperCase only selected
@@ -221,7 +212,6 @@ function passwordCreate() {
             return passwordClean;
         }
         create(newPasswordLength);
-
     }
 
    // lowerCase only selected
@@ -254,7 +244,6 @@ function passwordCreate() {
             return passwordClean;
         }
         create(newPasswordLength);
-
     }
 
    // special only selected
@@ -290,6 +279,6 @@ function copyClipboard() {
         copyText.select();
         copyText.setSelectionRange(0, 99999)
         document.execCommand("copy");
-        alert("Your password has been copied to clipboard.\r\nDon't share it with anyone!");
+        alert("Your password has been copied to the clipboard.\r\nDon't share it with anyone!");
     }
   }
